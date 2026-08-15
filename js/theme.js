@@ -1,8 +1,4 @@
-/**
- * Dark/light mode holati sahifalar orasida URL orqali saqlanadi
- * (?theme=dark), shuning uchun bir sahifadan ikkinchisiga o'tganda
- * tanlangan rejim tiklanib qoladi.
- */
+
 (function () {
   const params = new URLSearchParams(window.location.search);
   const saved = params.get("theme");
