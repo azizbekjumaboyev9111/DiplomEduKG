@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diplom.Edu.kg</title>
+<meta name="description" content="Bolalar shifokori haqida ma'lumot va shaxsiy fayllarni ko'rish uchun sahifa." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/theme.js"></script>
+<script src="js/i18n.js"></script>
+</head>
+<body>
+
+  <div class="top-controls">
+    <div class="lang-switch">
+      <button type="button" data-lang="ky">KY</button>
+      <button type="button" data-lang="ru">RU</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Rejimni almashtirish">
+      <svg class="icon-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+    </button>
+  </div>
+
+  <div class="brand">
+    <svg class="pulse-mark" viewBox="0 0 40 40"><path d="M2 20h6l3-9 5 18 4-13 3 4h15"/></svg>
+    <span>Diplom.Edu.kg</span>
+  </div>
+
+  
+
+  
+
+  <!-- ACCESS / ID FORM -->
+  <section id="access">
+    <div class="container">
+      <div class="access-card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 3v14M6 11l6 6 6-6" /><path d="M4 20h16" /></svg>
+        </div>
+        <h2 data-i18n="access_title">Файлыңызды көрүү</h2>
+        <p style="color:var(--text-soft); margin-top:10px;" data-i18n="access_desc">
+          Сизге берилген жеке ID номериңизди киргизиңиз — натыйжа (PDF) ушул жерде ачылат.
+        </p>
+
+        <form class="id-form" id="idForm">
+          <input
+            type="text"
+            id="idInput"
+            data-i18n-placeholder="id_placeholder"
+            placeholder="Мисалы: 12345"
+            autocomplete="off"
+            data-i18n-aria="id_aria"
+            aria-label="ID номери"
+          />
+          <button type="submit" class="btn btn-primary" data-i18n="open_btn">Ачуу</button>
+        </form>
+        <div class="form-msg" id="formMsg"></div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="pulse-divider container" viewBox="0 0 1000 60" preserveAspectRatio="none">
+    <path d="M0 30 H380 L410 8 L440 52 L470 20 L500 30 H1000" />
+  </svg>
+
+  <footer>
+    <div class="container">
+      <p><span data-i18n="footer_contact">Суроолор жана кайрылуулар үчүн:</span>
+        <a href="mailto:jumaboyev911@gmail.com">jumaboyev911@gmail.com</a>
+      </p>
+      <p style="margin-top:8px; font-size:0.85rem; opacity:.7;">© <span id="year"></span> Diplom.Edu.kg</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+  <script src="js/pulse.js"></script>
+</body>
+</html>
