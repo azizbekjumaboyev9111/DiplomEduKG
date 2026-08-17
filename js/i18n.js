@@ -1,20 +1,20 @@
 const TRANSLATIONS = {
   ky: {
-    theme_aria: "Режимди алмаштыруу",
-    access_title: "Файлыңызды көрүү",
-    access_desc: "Сизге берилген жеке ID номериңизди киргизиңиз — натыйжа ушул жерде ачылат.",
-    id_placeholder: "Мисалы: 12345",
-    id_aria: "ID номери",
-    open_btn: "Ачуу",
-    form_empty: "Сураныч, ID номерин киргизиңиз.",
-    footer_contact: "Суроолор жана кайрылуулар үчүн:",
-    back_link: "Башкы бетке кайтуу",
-    doc_found_title: "Сиздин файлыңыз",
+    theme_aria: "Переключить тему",
+    access_title: "Просмотр файла",
+    access_desc: "Введите ваш персональный ID — результат откроется прямо здесь.",
+    id_placeholder: "Например: 12345",
+    id_aria: "Номер ID",
+    open_btn: "Открыть",
+    form_empty: "Пожалуйста, введите ID.",
+    footer_contact: "По вопросам обращайтесь:",
+    back_link: "Вернуться на главную",
+    doc_found_title: "Ваш файл",
     id_label: "ID:",
-    download_btn: "Жүктөп алуу",
-    not_found_title: "Файл табылган жок",
-    not_found_desc: "Киргизилген ID туура эмес же мындай файл жок. ID номерин текшерип, кайра аракет кылып көрүңүз.",
-    retry_btn: "Кайра аракет кылуу"
+    download_btn: "Скачать",
+    not_found_title: "Файл не найден",
+    not_found_desc: "Введённый ID неверен или такого файла не существует. Проверьте ID и попробуйте снова.",
+    retry_btn: "Попробовать снова"
   },
   ru: {
     theme_aria: "Переключить тему",
@@ -34,21 +34,21 @@ const TRANSLATIONS = {
     retry_btn: "Попробовать снова"
   },
   en: {
-    theme_aria: "Toggle theme",
-    access_title: "View your file",
-    access_desc: "Enter your personal ID — the result will open right here.",
-    id_placeholder: "e.g. 12345",
-    id_aria: "ID number",
-    open_btn: "Open",
-    form_empty: "Please enter an ID.",
-    footer_contact: "For questions, contact:",
-    back_link: "Back to home",
-    doc_found_title: "Your file",
+    theme_aria: "Переключить тему",
+    access_title: "Просмотр файла",
+    access_desc: "Введите ваш персональный ID — результат откроется прямо здесь.",
+    id_placeholder: "Например: 12345",
+    id_aria: "Номер ID",
+    open_btn: "Открыть",
+    form_empty: "Пожалуйста, введите ID.",
+    footer_contact: "По вопросам обращайтесь:",
+    back_link: "Вернуться на главную",
+    doc_found_title: "Ваш файл",
     id_label: "ID:",
-    download_btn: "Download",
-    not_found_title: "File not found",
-    not_found_desc: "The ID you entered is invalid, or no such file exists. Please check and try again.",
-    retry_btn: "Try again"
+    download_btn: "Скачать",
+    not_found_title: "Файл не найден",
+    not_found_desc: "Введённый ID неверен или такого файла не существует. Проверьте ID и попробуйте снова.",
+    retry_btn: "Попробовать снова"
   }
 };
 
