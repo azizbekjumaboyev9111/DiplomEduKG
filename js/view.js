@@ -1,3 +1,6 @@
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -12,14 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (id && record) {
     document.getElementById("docId").textContent = record.id;
 
-    // PDF saytning o'zida ko'rsatiladi
-    const frame = document.getElementById("pdfFrame");
-    frame.src = record.fileUrl;
-
-    // "Yuklab olish / ko'rish" tugmasi — brauzerning o'z PDF vositasiga
-    // to'g'ridan-to'g'ri havola, hech qanday qo'shimcha kod orqali emas
     const openBtn = document.getElementById("openBtn");
     openBtn.href = record.fileUrl;
+
+    renderPdf(record.fileUrl);
 
     foundEl.hidden = false;
     notFoundEl.hidden = true;
@@ -28,3 +27,33 @@ document.addEventListener("DOMContentLoaded", () => {
     notFoundEl.hidden = false;
   }
 });
+
+async function renderPdf(url) {
+  const container = document.getElementById("pdfContainer");
+  container.innerHTML = "";
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  const pdf = await loadingTask.promise;
+
+  for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+    const page = await pdf.getPage(pageNum);
+
+    // Ekran kengligiga moslashtirish
+    const containerWidth = container.clientWidth || 800;
+    const baseViewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth / baseViewport.width) * (window.devicePixelRatio || 1);
+    const viewport = page.getViewport({ scale });
+
+    const canvas = document.createElement("canvas");
+    canvas.className = "pdf-page";
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+    canvas.style.width = "100%";
+    canvas.style.height = "auto";
+
+    container.appendChild(canvas);
+
+    const ctx = canvas.getContext("2d");
+    await page.render({ canvasContext: ctx, viewport }).promise;
+  }
+}

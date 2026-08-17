@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="js/theme.js"></script>
 </head>
 <body>
@@ -33,24 +34,24 @@
   </div>
 
   <div class="view-shell container">
-    <a href="index.html" data-internal class="back-link">
+    <!-- <a href="index.html" data-internal class="back-link">
       <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
       <span data-i18n="back_link">Башкы бетке кайтуу</span>
-    </a>
+    </a> -->
 
     <!-- Fayl topilganda ko'rsatiladi -->
     <div class="doc-card" id="docFound" hidden>
       <div class="doc-toolbar">
         <div>
           <h2 data-i18n="doc_found_title">Сиздин файлыңыз</h2>
-          <span class="id-pill"><span data-i18n="id_label">ID:</span> <span id="docId"></span></span>
+          <span style="display: none;" class="id-pill"><span data-i18n="id_label">ID:</span> <span id="docId"></span></span>
         </div>
         <a id="openBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="download_btn">
           Жүктөп алуу
         </a>
       </div>
       <div class="doc-frame-wrap">
-        <iframe id="pdfFrame" title="PDF hujjat" loading="lazy"></iframe>
+        <div id="pdfContainer" class="pdf-container"></div>
       </div>
     </div>
 
@@ -72,7 +73,7 @@
       <p><span data-i18n="footer_contact">Суроолор жана кайрылуулар үчүн:</span>
         <a href="mailto:jumaboyev911@gmail.com">jumaboyev911@gmail.com</a>
       </p>
-      <p style="margin-top:8px; font-size:0.85rem; opacity:.7;">© <span id="year"></span> Diplom.Edu.kg</p>
+      <p style="margin-top:8px; font-size:0.85rem; opacity:.7;"> <span id="year"></span> <a href="http://blackhole.uz" target="_blank" rel="noopener noreferrer">© BlackHole</a></p>
     </div>
   </footer> -->
 
