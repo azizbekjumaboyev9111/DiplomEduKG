@@ -15,41 +15,21 @@
 </head>
 <body>
 
-  <div class="top-controls">
-    <div class="lang-switch">
-      <button type="button" data-lang="ky">KY</button>
-      <button type="button" data-lang="ru">RU</button>
-      <button type="button" data-lang="en">EN</button>
-    </div>
-
-    <button class="theme-toggle" id="themeToggle" data-i18n-aria="theme_aria" aria-label="Toggle theme">
-      <svg class="icon-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
-    </button>
+  <div class="new-navbar">
+  <div class="logo">
+    <img src="./files/logo.png" alt="Loading . . .">
   </div>
 
-  <div class="brand">
-    <svg class="pulse-mark" viewBox="0 0 40 40"><path d="M2 20h6l3-9 5 18 4-13 3 4h15"/></svg>
-    <span>Diplom.Edu.kg</span>
-  </div>
+  <a id="openBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="download_btn" hidden>
+    Жүктөп алуу
+  </a>
+</div>
+
+  
 
   <div class="view-shell container">
-    <!-- <a href="index.html" data-internal class="back-link">
-      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      <span data-i18n="back_link">Башкы бетке кайтуу</span>
-    </a> -->
-
     <!-- Fayl topilganda ko'rsatiladi -->
     <div class="doc-card" id="docFound" hidden>
-      <div class="doc-toolbar">
-        <div>
-          <h2 data-i18n="doc_found_title">Сиздин файлыңыз</h2>
-          <span style="display: none;" class="id-pill"><span data-i18n="id_label">ID:</span> <span id="docId"></span></span>
-        </div>
-        <a id="openBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="download_btn">
-          Жүктөп алуу
-        </a>
-      </div>
       <div class="doc-frame-wrap">
         <div id="pdfContainer" class="pdf-container"></div>
       </div>
@@ -67,15 +47,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <footer>
-    <div class="container">
-      <p><span data-i18n="footer_contact">Суроолор жана кайрылуулар үчүн:</span>
-        <a href="mailto:jumaboyev911@gmail.com">jumaboyev911@gmail.com</a>
-      </p>
-      <p style="margin-top:8px; font-size:0.85rem; opacity:.7;"> <span id="year"></span> <a href="http://blackhole.uz" target="_blank" rel="noopener noreferrer">© BlackHole</a></p>
-    </div>
-  </footer> -->
 
   <script src="js/data.js"></script>
   <script src="js/view.js"></script>

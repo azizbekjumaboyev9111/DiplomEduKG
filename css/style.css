@@ -20,6 +20,7 @@
   color-scheme: light;
 }
 
+
 html[data-theme="dark"]{
   --bg:        #0A1D1B;
   --bg-soft:   #0E2624;
@@ -242,9 +243,10 @@ html[data-theme="dark"] .theme-toggle .icon-sun{ display: block; }
   font-family: inherit;
 }
 .btn-primary{
-  background: var(--teal);
-  color: var(--bg-soft);
+  background: darkblue;
+  color: white;
   box-shadow: 0 14px 30px -10px rgba(11,79,74,.55);
+  border-radius: 5px;
 }
 .btn-primary:hover{ transform: translateY(-3px); }
 .btn-ghost{
@@ -457,9 +459,24 @@ footer a:hover{ border-color: var(--teal); }
    PDF viewer page
    ========================================================= */
 
+.new-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.new-navbar img {
+  width: 190px;
+  height: 120px;
+}
+
+
 .view-shell{
   min-height: 100svh;
-  padding: 110px 0 60px;
+  /* padding: 110px 0 60px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -477,10 +494,10 @@ footer a:hover{ border-color: var(--teal); }
 .back-link:hover{ color: var(--accent); }
 
 .doc-card{
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  /* background: var(--surface); */
+  /* border-radius: var(--radius-lg); */
+  /* border: 1px solid var(--line); */
+  /* box-shadow: var(--shadow); */
   overflow: hidden;
 }
 .doc-toolbar{
@@ -504,11 +521,8 @@ footer a:hover{ border-color: var(--teal); }
   color: var(--text-soft);
 }
 
-.doc-frame-wrap{
-  background: var(--bg-soft);
-}
 .pdf-container{
-  background: var(--bg-soft);
+  /* background: var(--bg-soft); */
   /* max-height: 74vh;*/
   /* overflow-y: auto;*/
   padding: 20px 0;
@@ -519,8 +533,7 @@ footer a:hover{ border-color: var(--teal); }
 }
 
 .pdf-page{
-  box-shadow: var(--shadow);
-  border-radius: 6px;
+  box-shadow: none;
   max-width: 92%;
 }
 
@@ -529,7 +542,7 @@ footer a:hover{ border-color: var(--teal); }
 }
 
 .pdf-page{
-  box-shadow: var(--shadow);
+  box-shadow: none;
   border-radius: 6px;
   max-width: 92%;
 }
@@ -551,8 +564,11 @@ footer a:hover{ border-color: var(--teal); }
 .empty-state .btn{ margin-top: 24px; }
 
 @media (max-width: 640px){
-  .pdf-container{ max-height: auto }
+  .pdf-container{ max-height: 74vh }
   .doc-toolbar{ width: 100%; display: flex; justify-content: space-between; align-items: center;}
   .doc-toolbar h2 {font-size: 10px;}
   .doc-toolbar a{width: 100px; height: 10px; font-size: 10px; padding: 15px; display: flex; justify-content: center; align-items: center;}
+
+  .new-navbar img {width: 120px; height: 60px}
+  .btn-primary {width: 150px; height: 30px; font-size: 15px;}
 }

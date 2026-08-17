@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   if (id && record) {
-    document.getElementById("docId").textContent = record.id;
+    // Faqat element mavjud bo'lsa yozamiz
+    const docIdEl = document.getElementById("docId");
+    if (docIdEl) docIdEl.textContent = record.id;
 
     const openBtn = document.getElementById("openBtn");
-    openBtn.href = record.fileUrl;
+    if (openBtn) openBtn.href = record.fileUrl;
 
     renderPdf(record.fileUrl);
 
@@ -38,7 +40,6 @@ async function renderPdf(url) {
   for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
     const page = await pdf.getPage(pageNum);
 
-    // Ekran kengligiga moslashtirish
     const containerWidth = container.clientWidth || 800;
     const baseViewport = page.getViewport({ scale: 1 });
     const scale = (containerWidth / baseViewport.width) * (window.devicePixelRatio || 1);
