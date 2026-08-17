@@ -247,6 +247,9 @@ html[data-theme="dark"] .theme-toggle .icon-sun{ display: block; }
   color: white;
   box-shadow: 0 14px 30px -10px rgba(11,79,74,.55);
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-primary:hover{ transform: translateY(-3px); }
 .btn-ghost{
