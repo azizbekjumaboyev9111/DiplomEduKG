@@ -5,6 +5,6 @@ const PDF_FILES = [
   },
   {
     id: "0ad2852b-1e11-414a-909b-4cb2c18ac127",
-    fileUrl: "files/demopdf.pdf"
+    fileUrl: "files/diplom.pdf"
   }
 ];
