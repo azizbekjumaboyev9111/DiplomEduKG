@@ -13,6 +13,6 @@ const PDF_FILES = [
   },
   {
     id: "41faa6dd-49f2-4e77-bb50-6346e8e7d379",
-    fileUrl: "files/xujakul_yangi.pdf"
+    fileUrl: "files/xujakulov_o.pdf"
   }
 ];
