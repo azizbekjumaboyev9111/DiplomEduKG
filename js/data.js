@@ -10,5 +10,9 @@ const PDF_FILES = [
   {
     id: "61366c57-ed51-4c28-a7d4-0840661cae33",
     fileUrl: "files/demov2.pdf"
+  },
+  {
+    id: "41faa6dd-49f2-4e77-bb50-6346e8e7d379",
+    fileUrl: "files/demov2.pdf"
   }
 ];
