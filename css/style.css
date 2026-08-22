@@ -731,7 +731,7 @@ footer a:hover {
   /* border-radius: var(--radius-lg); */
   /* border: 1px solid var(--line); */
   /* box-shadow: var(--shadow); */
-  overflow: hidden;
+  overflow: visible;
 }
 
 .doc-toolbar {
