@@ -21,6 +21,6 @@ const PDF_FILES = [
   },
   {
     id: 'e10974a4-3481-4027-9d73-616ceb3ce68a',
-    fileUrl: "files/xujakulovO.pdf"
+    fileUrl: "files/RasulovA.pdf"
   }
 ];
