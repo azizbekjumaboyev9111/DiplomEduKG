@@ -18,5 +18,9 @@ const PDF_FILES = [
   {
     id: 'b76b3ae1-3f5c-4c82-b1b9-b5b95a638b77',
     fileUrl: "files/xujakulovO.pdf"
+  },
+  {
+    id: 'e10974a4-3481-4027-9d73-616ceb3ce68a',
+    fileUrl: "files/xujakulovO.pdf"
   }
 ];
