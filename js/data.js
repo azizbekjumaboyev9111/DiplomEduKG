@@ -22,5 +22,17 @@ const PDF_FILES = [
   {
     id: 'e10974a4-3481-4027-9d73-616ceb3ce68a',
     fileUrl: "files/RasulovA.pdf"
+  },
+  {
+    id: '403c5eeb-3d7b-46c2-a9a9-99f4a0ffb1b3',
+    fileUrl: "files/RasulovA.pdf"
+  },
+  {
+    id: "5dab1544-3e87-4083-af43-a3dac8afcc66",
+    fileUrl: "files/RasulovA.pdf"
+  },
+  {
+    id: "6cce6409-5caa-4c93-af71-e9678ec03855",
+    fileUrl: "files/xusayinzoda.pdf"
   }
 ];
