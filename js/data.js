@@ -29,7 +29,7 @@ const PDF_FILES = [
   },
   {
     id: "5dab1544-3e87-4083-af43-a3dac8afcc66",
-    fileUrl: "files/RasulovA.pdf"
+    fileUrl: "files/salomov.pdf"
   },
   {
     id: "6cce6409-5caa-4c93-af71-e9678ec03855",
