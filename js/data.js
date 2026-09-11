@@ -38,5 +38,9 @@ const PDF_FILES = [
   {
     id: "d285b159-50a0-477b-b19a-459453822cbb",
     fileUrl: 'files/bobyev_axrorjon.pdf'
+  },
+  {
+    id: '947ebbd5-953b-47d5-8dcd-6f5dea174b55',
+    fileUrl: 'files/xasan.pdf'
   }
 ];
