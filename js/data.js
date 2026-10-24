@@ -45,10 +45,10 @@ const PDF_FILES = [
   },
   {
     id: '6ac57f0b-c1a4-4e3d-a1dc-12b9be266a59',
-    fileUrl: 'files/Камбарова_Г.pdf'
+    fileUrl: 'files/Баннаев_А.pdf'
   },
   {
     id: 'bd51fa80-179e-451f-9cb6-be9079006733',
-    fileUrl: 'files/Баннаев_А.pdf'
+    fileUrl: 'files/Камбарова_Г.pdf'
   }
 ];
