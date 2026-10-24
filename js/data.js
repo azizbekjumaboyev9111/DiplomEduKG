@@ -41,7 +41,7 @@ const PDF_FILES = [
   },
   {
     id: '947ebbd5-953b-47d5-8dcd-6f5dea174b55',
-    fileUrl: 'files/Баннаев А.pdf'
+    fileUrl: 'files/xasan.pdf'
   },
   {
     id: '6ac57f0b-c1a4-4e3d-a1dc-12b9be266a59',
@@ -49,6 +49,6 @@ const PDF_FILES = [
   },
   {
     id: 'bd51fa80-179e-451f-9cb6-be9079006733',
-    fileUrl: 'files/xasan.pdf'
+    fileUrl: 'files/Баннаев_А.pdf'
   }
 ];
